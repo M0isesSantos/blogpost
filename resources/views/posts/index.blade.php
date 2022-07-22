@@ -12,10 +12,12 @@
                         @endforeach --}}
                         <div class="text-1xl text-white leading-2 font-bold">
                         {{date('d - M - Y //  h:i', strtotime($posts->created_at) )}}, <hr>
+                       
+                    </div>
+                    {{-- se agrega cambio y stilos a email --}}
+                    <div class="text-1xl text-white leading-2 font-bold">
                         {{$posts->email}}
                     </div>
-
-                        
                         
                     </a>
                 </div>
