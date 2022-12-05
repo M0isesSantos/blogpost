@@ -12,13 +12,13 @@
                         @endforeach --}}
                         <div class="text-1xl text-white leading-2 font-bold">
                         {{date('d - M - Y //  h:i', strtotime($posts->created_at) )}}, <hr>
-                       
+
                     </div>
-                    {{-- se agrega cambio y stilos a email --}}
+
                     <div class="text-1xl text-white leading-2 font-bold">
                         {{$posts->email}}
                     </div>
-                        
+
                     </a>
                 </div>
                 <h1 class="text-4xl text-white leading-8 font-bold">
@@ -29,13 +29,13 @@
             </div>
         </article>
        @endforeach
-        
+
        </div>
-       
-       <div class="mt-4">        
+
+       <div class="mt-4">
         {{$post->links()}}
        </div>
-    
+
     </div>
-    
+
 </x-app-layout>

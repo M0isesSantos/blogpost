@@ -23,8 +23,8 @@
                 </div><br>
 
                 <div class="form group">
-                    {!! Form::label('email', 'Email:') !!}
-                    {!! Form::text('email', null, ['class' => 'form-control', 'placeholder' => 'Ingresar correo']) !!}
+                    {!! Form::label('email', 'Autor:') !!}
+                    {!! Form::text('email', null, ['class' => 'form-control', 'placeholder' => 'Autor-Derechos Reservados']) !!}
 
                     @error('email')
                     <small class="text-danger">{{$message}}</small>
@@ -44,7 +44,7 @@
                 <div class="form group">
                     {!! Form::label('categoria_id', 'Categoria') !!}
                     {!! Form::select('categoria_id', $categorias, null, ['class' => 'form-control']) !!}
-                    
+
                     @error('categoria_id')
                     <small class="text-danger">{{$message}}</small>
                     @enderror
@@ -96,7 +96,7 @@
             {!! Form::close() !!}
         </div>
     </div>
-    
+
 @stop
 
 @section('css')
@@ -133,7 +133,7 @@
                 console.error( error );
             } );
 
-    //Cambiar imagen 
+    //Cambiar imagen
     document.getElementById("file").addEventListener('change', cambiarImagen);
         function cambiarImagen(event){
             var file = event.target.files[0];

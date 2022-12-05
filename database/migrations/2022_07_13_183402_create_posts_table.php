@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->string('titulo');
-            $table->string('email');
+            /* $table->string('email'); */
             $table->string('slug');
             $table->longText('contenido')->nullable();
 
@@ -29,7 +29,7 @@ return new class extends Migration
             $table->foreign('categoria_id')->references('id')->on('categorias')->onDelete("cascade");
             //$table->bigInteger('categoria_id')->unsigned();
            // $table->bigInteger('user_id')->unsigned();
-            
+
             //$table->foreign('categoria_id')->references('id')->on('Categorias')->onDelete("cascade");
             //$table->foreign('user_id')->references('id')->on('users')->onDelete("cascade");
 
